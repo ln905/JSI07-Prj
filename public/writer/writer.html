@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../sources/tab logo.png">
+    <link rel="stylesheet" href="writer.css" type="text/css" />
+    <title>Writer Page</title>
+</head>
+<body>
+  <div id="topnav" class="topnav">
+    <div>
+        <a id="signup" href="../auth/Register/index.html">Sign up</a>
+        <a id="signin" href="../auth/Login/index.html">Sign in</a>
+        <a id="writer" href="../writer/writer.html">Writer Page</a>
+        <a id="signout" href="">Sign out</a>
+    </div>
+  </div>
+
+  <div id="top_bar">
+    <div id="logo_container">
+      <img class="logo" src="../sources/logo.png">
+    </div>
+    <div id="account_container">
+      <h2 class="account" id="account">Account</h2>
+      <img class="expand_btn" id= "expand_btn" src="../sources/expand.png">
+    </div>
+    <div id="categories_container">
+      <img class="categories" id="categories_img" src="../sources/categories.png">
+    </div>
+  </div>
+
+  <div id="sidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+    <a href="../science/science.html">Science</a>
+    <a href="../review/review.html">Review</a>
+    <a href="../tech news/tech.html">Tech News</a>
+    <a href="../game news/game.html">Games News</a>
+  </div>
+
+  <div id="search_container">
+    <input type="text" class="search_box" placeholder=" Search for your article">
+    <button class="search_btn"><img src="../sources/search.png" class="search_img alt="></button>
+  </div>
+
+  <div id="content">
+    <div class="category_container">
+      <label for="category">Choose category</label>
+      <select name="category" id="category">
+        <option value="science">Science</option>
+        <option value="review">Review</option>
+        <option value="tech">Tech News</option>
+        <option value="game">Games News</option>
+      </select>
+    </div>
+    
+    <div class="status_container">
+      <label for="status">Status</label>
+      <select name="status" id="status">
+        <option value="1">Uploaded</option>
+        <option value="2">Top Article</option>
+        <option value="0">Main</option>
+      </select>      
+    </div>
+    
+    <div class="thumbnail_container">
+      <label for="thumbnail">Add Thumbnail</label>
+      <input name="thumbnail" id="thumbnail" class="input_thumbnail" type="text" placeholder="Thumbnail Image Link">
+    </div>
+
+    <div class="title_container">
+      <label for="title">Add Title</label>
+      <input name="title" id="1" class="input_title" type="text" placeholder="Title">
+    </div>
+    
+  <!--
+    <div class="description_container">
+      <label for="description">Add Description</label>
+      <input name="description" id="description1" class="input_description" type="text" placeholder="Description">
+    </div>
+
+    <div class="text_container">
+      <label for="text">Add Text</label>
+      <input name="text" id="text" type="text" placeholder="Text" class="input_text">
+    </div>
+
+    <div class="image_container">
+      <label for="image">Add Image</label>
+      <input name="image" id="image1" type="text" placeholder="Image link" class="input_image">
+    </div>
+  -->
+  </div>
+   
+  <div class="btn_n_sth">
+    <button class="add_image" id="add_image">Add Image</button>
+    <button class="add_text" id="add_text">Add Text</button>
+    <button class="add_description" id="add_description">Add Description</button>
+  </div>
+  
+  <button id="submit" class="submit">SUBMIT</button>
+
+  <hr>
+  <div id="footer">
+    <div id="footer_logo_container">
+      <img id="footer_logo" src="../sources/logo.png" alt="">
+    </div>
+
+    <div id="about_us_container">
+      <h2 id="about_us" class="part_title">ABOUT US</h2>
+      <h3 id="contact">Contact us: namanhl.2005@gmail.com</h3>
+    </div>
+
+    <div id="footer_follow_container">
+      <h2 id="follow_us" class="part_title">FOLLOW US</h2>
+      <div id="follow_button_container">
+        <a class="follow_button" id="facebook" href="http://www.facebook.com/ln.905">
+          <img class="follow_icon" src="../sources/facebook.png" alt="">
+        </a>
+        <a class="follow_button" id="github" href="http://www.github.com">
+          <img class="follow_icon" src="../sources/github.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+<script type="module" src="writer.js"></script>
+</body>
+</html>
